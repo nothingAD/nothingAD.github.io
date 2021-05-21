@@ -1,0 +1,44 @@
+body 
+{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace ;
+    font-size: 16px
+    
+}
+
+.divider::before
+{
+    font-size: 16px;
+    content:'--------------------------'
+}
+
+.text {
+    
+    display: block;
+    width: 700px; /*based on how much width this div should have*/
+    line-break: auto;
+}
+
+.main{
+    width:800px;
+     margin:0 auto;
+}
+
+@media (max-width: 415px ) {
+    .text {
+        display: block;
+        width: 300px; /*based on how much width this div should have*/
+        line-break: auto;
+    }
+
+    .main {
+        width:360px;
+         margin:0 auto;
+    }
+
+    .divider::before{
+        font-size: 11px;
+        content:'+++++++++'
+    }
+}
